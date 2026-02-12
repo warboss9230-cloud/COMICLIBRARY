@@ -2,117 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ComicLibrary - Raj Comics</title>
+  <title>COMICLIBRARY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header>
-  <div class="logo glow-text">ComicLibrary</div>
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="logo">COMICLIBRARY</div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
-  <nav id="navMenu">
+
+  <nav class="menu" id="menu">
     <a href="#">Home</a>
-    <a href="#heroes">Heroes</a>
     <a href="#trending">Trending</a>
-    <a href="#categories">Categories</a>
+    <a href="#heroes">Heroes</a>
+    <a href="#cat">Categories</a>
+    <a href="#">Contact</a>
   </nav>
 </header>
 
-<!-- WELCOME -->
-<section class="welcome">
-  <h1 class="glow-text">Welcome to ComicLibrary</h1>
-  <p>Your Ultimate Raj Comics Universe</p>
+<!-- ===== TRENDING ===== -->
+<section class="section">
+  <h2>Trending Comics</h2>
+  <div class="slider">
+
+    <a href="heroes/doga.html" class="card">
+      <img src="images/doga.webp" alt="Doga">
+    </a>
+
+    <a href="heroes/nagraj.html" class="card">
+      <img src="images/nagraj.webp" alt="Nagraj">
+    </a>
+
+    <a href="heroes/parmanu.html" class="card">
+      <img src="images/parmanu.webp" alt="Parmanu">
+    </a>
+
+    <a href="heroes/bankelal.html" class="card">
+      <img src="images/bankelal.webp" alt="Bankelal">
+    </a>
+
+    <a href="heroes/dhruv.html" class="card">
+      <img src="images/dhruv.webp" alt="Super Commando Dhruv">
+    </a>
+ </div>
 </section>
 
-<!-- HERO SLIDER -->
-<section class="slider">
-  <h2 class="section-title">Popular Heroes</h2>
-  <div class="slide-container">
+<!-- ===== HERO SECTION ===== -->
+<section class="section">
+  <h2>Popular Heroes</h2>
+  <div class="slider">
 
-    <a href="heroes/nagraj.html">
-      <img src="images/heroes/nagraj.jpg" class="glow-img" alt="Nagraj">
+    <a href="heroes/nagraj.html" class="small-card">
+      <img src="images/nagraj.webp" alt="Nagraj">
+      <span>Nagraj</span>
     </a>
 
-    <a href="heroes/dhruv.html">
-      <img src="images/heroes/dhruv.jpg" class="glow-img" alt="Super Commando Dhruva">
+    <a href="heroes/doga.html" class="small-card">
+      <img src="images/doga.webp" alt="Doga">
+      <span>Doga</span>
     </a>
 
-    <a href="heroes/doga.html">
-      <img src="images/heroes/doga.jpg" class="glow-img" alt="Doga">
+    <a href="heroes/dhruv.html" class="small-card">
+      <img src="images/dhruv.webp" alt="Dhruv">
+      <span>Dhruv</span>
     </a>
 
-    <a href="heroes/bhokal.html">
-      <img src="images/heroes/bhokal.jpg" class="glow-img" alt="Bhokal">
+    <a href="heroes/bhokal.html" class="small-card">
+      <img src="images/bhokal.webp" alt="Bhokal">
+      <span>Bhokal</span>
     </a>
 
-    <a href="heroes/parmanu.html">
-      <img src="images/heroes/parmanu.jpg" class="glow-img" alt="Parmanu">
-    </a>
-
-    <a href="heroes/shakti.html">
-      <img src="images/heroes/shakti.jpg" class="glow-img" alt="Shakti">
-    </a>
-
-    <a href="heroes/tiranga.html">
-      <img src="images/heroes/tiranga.jpg" class="glow-img" alt="Tiranga">
-    </a>
-
-    <a href="heroes/inspector_steel.html">
-      <img src="images/heroes/inspector_steel.jpg" class="glow-img" alt="Inspector Steel">
-    </a>
-
-    <a href="heroes/anthony.html">
-      <img src="images/heroes/anthony.jpg" class="glow-img" alt="Anthony">
-    </a>
-
-    <a href="heroes/bankelal.html">
-      <img src="images/heroes/bankelal.jpg" class="glow-img" alt="Bankelal">
+    <a href="heroes/shakti.html" class="small-card">
+      <img src="images/shakti.webp" alt="Shakti">
+      <span>Shakti</span>
     </a>
 
   </div>
 </section>
 
-<!-- TRENDING COMICS -->
-<section id="trending">
-  <h2 class="section-title">Trending Comics</h2>
-  <div class="slide-container">
-    <a href="#"><img src="images/comics/khuni_khanda.jpg" class="glow-img"></a>
-    <a href="#"><img src="images/comics/nagmani.jpg" class="glow-img"></a>
-    <a href="#"><img src="images/comics/dhruv_action.jpg" class="glow-img"></a>
+<!-- ===== CATEGORIES ===== -->
+<section class="section">
+  <h2>Categories</h2>
+  <div class="slider">
+    <div class="category-card">Action</div>
+    <div class="category-card">Horror</div>
+    <div class="category-card">Mythology</div>
+    <div class="category-card">Fantasy</div>
+    <div class="category-card">Sci-Fi</div>
   </div>
 </section>
 
-<!-- HERO GRID -->
-<section id="heroes">
-  <h2 class="section-title">All Heroes</h2>
-  <div class="grid">
-    <a href="heroes/nagraj.html"><img src="images/heroes/nagraj.jpg" class="glow-img"></a>
-    <a href="heroes/dhruv.html"><img src="images/heroes/dhruv.jpg" class="glow-img"></a>
-    <a href="heroes/doga.html"><img src="images/heroes/doga.jpg" class="glow-img"></a>
-    <a href="heroes/bhokal.html"><img src="images/heroes/bhokal.jpg" class="glow-img"></a>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  
+  <div class="footer-content">
+    <h3>ComicLibrary</h3>
+    <p>Your Ultimate Raj Comics Fan Collection</p>
   </div>
-</section>
 
-<!-- CATEGORIES -->
-<section id="categories">
-  <h2 class="section-title">Categories</h2>
-  <div class="grid">
-    <div class="card">Superheroes</div>
-    <div class="card">Thriller</div>
-    <div class="card">Fantasy</div>
-    <div class="card">Adventure</div>
+  <!-- WARNING / DISCLAIMER -->
+  <div class="warning">
+    <p>
+      Disclaimer: ComicLibrary is a fan-made website created for educational and informational purposes only. 
+      All characters, images, and comic content belong to their respective copyright owners.
+    </p>
   </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <p class="warning">
-    ⚠ This is a fan-made website. All characters belong to Raj Comics.
-  </p>
-  <p>© 2026 ComicLibrary. All Rights Reserved.</p>
+  <!-- COPYRIGHT -->
+  <div class="copyright">
+    <p>© 2026 ComicLibrary. All Rights Reserved.</p>
+  </div>
+
 </footer>
 
+<script src="js/script.js"></script>
 </body>
-  </html>
+        </html>
