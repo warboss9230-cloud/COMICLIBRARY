@@ -1,38 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Doga | ComicLibrary</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/hero.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Doga | ComicLibrary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Doga Theme CSS -->
+    <link rel="stylesheet" href="../css/doga.css">
+</head>
 <body>
 
-  <h1>DOGA</h1>
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">ComicLibrary</div>
 
-  <p>
-    Doga is one of the darkest and most intense heroes of Raj Comics.
-    Operating in Mumbai’s criminal underworld, he fights crime with ruthless determination.
-    Unlike traditional superheroes, Doga relies on weapons, combat mastery, and fearless tactics
-    to eliminate criminals and protect innocent citizens from violence and corruption.
-  </p>
+  <div class="header-right">
+    <div class="search-icon">🔍</div>
 
-  <hr>
+    <div class="menu" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 
-  <!-- Clickable Image -->
-  <a href="../images/heroes/Doga.jpg" target="_blank">
-    <img src="../images/heroes/Doga.jpg" alt="Doga Raj Comics" width="300">
-  </a>
+  <div class="dropdown" id="dropdownMenu">
+    <a href="../index.html">Home</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
+    <a href="#">Contact</a>
+  </div>
+</header>
 
-  <h2>Real Name</h2>
-  <p>Suraj</p>
+<!-- SEARCH -->
+<div class="search-overlay" id="searchOverlay">
+  <input type="text" placeholder="Search comics...">
+</div>
 
-  <h2>First Appearance</h2>
-  <p>Curfew</p>
 
-  <br>
-  <a href="../index.html">⬅ Back to Home</a>
+<!-- DOGA PAGE -->
+<div class="hero-detail doga-bg">
 
+    <!-- Profile -->
+    <div class="hero-profile">
+        <img src="../images/heroes/doga.jpg" alt="Doga">
+
+        <div class="hero-info">
+            <h1>Doga</h1>
+            <p>
+                Doga is the dark vigilante of Mumbai. Unlike traditional superheroes,
+                he operates in the shadows and fights crime using brutal strength,
+                weapons, and fearless determination. His mission is to eliminate evil
+                and protect the innocent at any cost.
+            </p>
+        </div>
+    </div>
+
+    <!-- Powers -->
+    <div class="powers">
+        <h2>Skills & Abilities</h2>
+        <ul>
+            <li>Peak human strength and endurance</li>
+            <li>Expert hand-to-hand combat</li>
+            <li>Master of firearms and weapons</li>
+            <li>Fearless crime fighter</li>
+            <li>High pain tolerance and survival skills</li>
+        </ul>
+    </div>
+
+    <!-- Comics -->
+    <div class="comics-section">
+        <h2>Popular Comics</h2>
+
+        <div class="comics-grid">
+
+            <div class="comic-card">
+                <img src="../images/comics/doga1.jpg">
+                <span>Curfew</span>
+            </div>
+
+            <div class="comic-card">
+                <img src="../images/comics/doga2.jpg">
+                <span>Hinsak</span>
+            </div>
+
+            <div class="comic-card">
+                <img src="../images/comics/doga3.jpg">
+                <span>Jurm</span>
+            </div>
+
+            <div class="comic-card">
+                <img src="../images/comics/doga4.jpg">
+                <span>Doga vs Bhediya</span>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <p>© 2026 ComicLibrary</p>
+    </div>
+</footer>
+
+<script src="../js/doga.js"></script>
 </body>
-</html>
+              </html>
