@@ -1,4 +1,4 @@
-// ===== Header Menu =====
+// ===== Menu =====
 const menuBtn = document.getElementById("menuBtn");
 const dropdown = document.getElementById("dropdownMenu");
 
@@ -7,7 +7,7 @@ menuBtn.addEventListener("click", () => {
     dropdown.style.display === "flex" ? "none" : "flex";
 });
 
-// ===== Search Overlay =====
+// ===== Search =====
 const searchIcon = document.querySelector(".search-icon");
 const searchOverlay = document.getElementById("searchOverlay");
 
@@ -25,7 +25,7 @@ searchOverlay.addEventListener("click", (e) => {
   }
 });
 
-// Steel glow interaction
+// Hover glow
 document.querySelectorAll(".comic-card").forEach(card => {
     card.addEventListener("mouseenter", () => {
         card.style.boxShadow = "0 0 30px #00ccff";
