@@ -1,4 +1,4 @@
-/* ===== Steel Theme ===== */
+/* ===== Inspector Steel Theme ===== */
 
 .steel-bg {
     position: relative;
@@ -7,19 +7,19 @@
     margin: auto;
 }
 
-/* Metallic glow background */
+/* Cyber glow background */
 .steel-bg::before {
     content: "";
     position: fixed;
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, #00ccff, transparent 60%);
-    opacity: 0.08;
-    animation: steelPulse 6s infinite alternate;
+    opacity: 0.06;
+    animation: cyberPulse 6s infinite alternate;
     z-index: -1;
 }
 
-@keyframes steelPulse {
+@keyframes cyberPulse {
     from { transform: scale(1); }
     to { transform: scale(1.15); }
 }
@@ -38,7 +38,6 @@
     width: 220px;
     border-radius: 15px;
     box-shadow: 0 0 25px #00ccff;
-    filter: contrast(1.1);
     animation: steelFloat 4s ease-in-out infinite;
 }
 
