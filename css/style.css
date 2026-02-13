@@ -163,10 +163,10 @@ body::before {
 /* ===== HERO SECTION ===== */
 
 .hero-section {
-    padding: 20px;
+    padding: 20px 10px;
 }
 
-/* Hero Heading Text */
+/* Intro Text */
 .hero-text {
     color: #ffffff;
     font-size: 16px;
@@ -174,41 +174,36 @@ body::before {
     margin-bottom: 20px;
 }
 
-/* ===== HERO GRID ===== */
+/* ===== HORIZONTAL CONTAINER ===== */
 
 .hero-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 cards per row */
+    display: flex;
     gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
 }
 
-/* Tablet */
-@media (min-width: 600px) {
-    .hero-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* Desktop */
-@media (min-width: 900px) {
-    .hero-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
+/* Hide Scrollbar (Clean Look) */
+.hero-container::-webkit-scrollbar {
+    display: none;
 }
 
 /* ===== HERO CARD ===== */
 
 .hero-card {
-    position: relative;
-    width: 100%;
+    min-width: 160px;      /* Slide ke liye fixed width */
     height: 260px;
+    flex-shrink: 0;
+
     background: #0b0b0b;
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
 
-    /* Glow Effect */
+    /* Neon Glow */
     box-shadow:
         0 0 10px rgba(0, 255, 255, 0.4),
         0 0 20px rgba(0, 255, 255, 0.2);
@@ -224,7 +219,7 @@ body::before {
         0 0 40px rgba(0, 255, 255, 0.4);
 }
 
-/* ===== HERO IMAGE ===== */
+/* ===== IMAGE ===== */
 
 .hero-card img {
     width: 100%;
@@ -233,17 +228,35 @@ body::before {
     display: block;
 }
 
-/* ===== HERO TITLE ===== */
+/* ===== TITLE ===== */
 
 .hero-title {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
+}
+
+/* ===== RESPONSIVE SIZE ===== */
+
+/* Tablet */
+@media (min-width: 600px) {
+    .hero-card {
+        min-width: 180px;
+        height: 280px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .hero-card {
+        min-width: 200px;
+        height: 300px;
+    }
 }
 /* Trending */
 
