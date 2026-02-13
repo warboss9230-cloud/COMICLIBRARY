@@ -1,1 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    background: #111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.header h1 {
+    color: #00f7ff;
+}
+
+.header a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Hero Profile */
+.hero-profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00f7ff;
+}
+
+.hero-info {
+    max-width: 600px;
+}
+
+.hero-info h2 {
+    margin-bottom: 10px;
+    color: #00f7ff;
+}
+
+.hero-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.powers {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Comics Section */
+.comics-section {
+    padding: 20px;
+}
+
+.comics-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00f7ff;
+}
+
+/* Ordered Grid */
+.comics-grid {
+    list-style-position: inside;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+/* Comic Card */
+.comics-grid li {
+    background: #111;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.comics-grid li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #00f7ff;
+}
+
+.comics-grid img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.comics-grid p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.comics-grid a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 180px;
+    }
+}
