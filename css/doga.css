@@ -1,0 +1,138 @@
+/* ===== Doga Dark Theme ===== */
+
+.doga-bg {
+    position: relative;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Dark red smoke background */
+.doga-bg::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #ff0000, transparent 60%);
+    opacity: 0.06;
+    animation: bloodPulse 6s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes bloodPulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+}
+
+/* Profile */
+
+.hero-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-profile img {
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #ff0000;
+    filter: contrast(1.1);
+    animation: dogaFloat 4s ease-in-out infinite;
+}
+
+@keyframes dogaFloat {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.hero-info {
+    text-align: center;
+}
+
+.hero-info h1 {
+    font-size: 28px;
+    color: #ff0000;
+}
+
+.hero-info p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Powers */
+
+.powers h2 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.powers ul {
+    list-style: none;
+}
+
+.powers li {
+    background: #0a0a0a;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff0000;
+    transition: transform 0.3s;
+}
+
+.powers li:hover {
+    transform: translateX(6px);
+}
+
+/* Comics */
+
+.comics-section h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+.comics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.comic-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px #ff0000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff0000;
+}
+
+.comic-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.comic-card span {
+    display: block;
+    padding: 8px;
+    font-size: 13px;
+}
+
+/* Desktop */
+
+@media(min-width:700px) {
+    .hero-profile {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-info {
+        text-align: left;
+    }
+}
