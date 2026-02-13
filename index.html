@@ -2,122 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>COMICLIBRARY</title>
+  <title>ComicLibrary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS LINK -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- HEADER -->
 <header class="header">
-  <div class="logo">COMICLIBRARY</div>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="logo">ComicLibrary</div>
 
-  <nav class="menu" id="menu">
+  <div class="header-right">
+    <div class="search-icon">🔍</div>
+
+    <div class="menu" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="dropdown" id="dropdownMenu">
     <a href="#">Home</a>
-    <a href="#trending">Trending</a>
-    <a href="#heroes">Heroes</a>
-    <a href="#cat">Categories</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
     <a href="#">Contact</a>
-  </nav>
+  </div>
 </header>
 
-<!-- ===== TRENDING ===== -->
-<section class="section">
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <input type="text" placeholder="Search comics...">
+</div>
+
+<!-- WELCOME -->
+<section class="welcome">
+  Welcome to ComicLibrary, your ultimate destination for Hindi and Indian comics.
+  Discover legendary heroes, trending stories, and timeless adventures in one place.
+</section>
+
+<!-- HERO -->
+<section class="hero-slider">
+  <div class="hero-container">
+    <div class="hero-card">Hero Comic 1</div>
+    <div class="hero-card">Hero Comic 2</div>
+    <div class="hero-card">Hero Comic 3</div>
+    <div class="hero-card">Hero Comic 4</div>
+  </div>
+</section>
+
+<!-- TRENDING -->
+<section class="trending">
   <h2>Trending Comics</h2>
-  <div class="slider">
-
-    <a href="heroes/doga.html" class="card">
-      <img src="images/doga.webp" alt="Doga">
-    </a>
-
-    <a href="heroes/nagraj.html" class="card">
-      <img src="images/nagraj.webp" alt="Nagraj">
-    </a>
-
-    <a href="heroes/parmanu.html" class="card">
-      <img src="images/parmanu.webp" alt="Parmanu">
-    </a>
-
-    <a href="heroes/bankelal.html" class="card">
-      <img src="images/bankelal.webp" alt="Bankelal">
-    </a>
-
-    <a href="heroes/dhruv.html" class="card">
-      <img src="images/dhruv.webp" alt="Super Commando Dhruv">
-    </a>
- </div>
-</section>
-
-<!-- ===== HERO SECTION ===== -->
-<section class="section">
-  <h2>Popular Heroes</h2>
-  <div class="slider">
-
-    <a href="heroes/nagraj.html" class="small-card">
-      <img src="images/nagraj.webp" alt="Nagraj">
-      <span>Nagraj</span>
-    </a>
-
-    <a href="heroes/doga.html" class="small-card">
-      <img src="images/doga.webp" alt="Doga">
-      <span>Doga</span>
-    </a>
-
-    <a href="heroes/dhruv.html" class="small-card">
-      <img src="images/dhruv.webp" alt="Dhruv">
-      <span>Dhruv</span>
-    </a>
-
-    <a href="heroes/bhokal.html" class="small-card">
-      <img src="images/bhokal.webp" alt="Bhokal">
-      <span>Bhokal</span>
-    </a>
-
-    <a href="heroes/shakti.html" class="small-card">
-      <img src="images/shakti.webp" alt="Shakti">
-      <span>Shakti</span>
-    </a>
-
+  <div class="grid">
+    <div class="card">Comic 1</div>
+    <div class="card">Comic 2</div>
+    <div class="card">Comic 3</div>
+    <div class="card">Comic 4</div>
+    <div class="card">Comic 5</div>
+    <div class="card">Comic 6</div>
   </div>
 </section>
 
-<!-- ===== CATEGORIES ===== -->
-<section class="section">
+<!-- CATEGORY -->
+<section class="category">
   <h2>Categories</h2>
-  <div class="slider">
-    <div class="category-card">Action</div>
-    <div class="category-card">Horror</div>
-    <div class="category-card">Mythology</div>
-    <div class="category-card">Fantasy</div>
-    <div class="category-card">Sci-Fi</div>
+  <div class="category-list">
+    <div class="category-item">Superhero</div>
+    <div class="category-item">Horror</div>
+    <div class="category-item">Mythology</div>
+    <div class="category-item">Adventure</div>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer class="footer">
-  
-  <div class="footer-content">
-    <h3>ComicLibrary</h3>
-    <p>Your Ultimate Raj Comics Fan Collection</p>
-  </div>
+  <div class="footer-container">
 
-  <!-- WARNING / DISCLAIMER -->
-  <div class="warning">
-    <p>
-      Disclaimer: ComicLibrary is a fan-made website created for educational and informational purposes only. 
-      All characters, images, and comic content belong to their respective copyright owners.
+    <p class="footer-warning">
+      <strong>Content Notice:</strong> This website is created for informational and educational purposes only.
     </p>
-  </div>
 
-  <!-- COPYRIGHT -->
-  <div class="copyright">
-    <p>© 2026 ComicLibrary. All Rights Reserved.</p>
-  </div>
+    <p class="footer-disclaimer">
+      Comic titles, characters, logos, and images are trademarks and copyrights 
+      of their respective publishers and owners. ComicLibrary does not claim ownership 
+      of any third-party intellectual property.
+    </p>
 
+    <p class="footer-legal">
+  If you are a copyright owner and believe any content on this website
+  infringes your rights, please contact us at
+  <a href="mahihs@comiclibrary.in">legal@comiclibrary.in</a>
+  for immediate review and removal.
+</p>
+
+    <p class="footer-copy">
+      © 2026 ComicLibrary. All Rights Reserved.
+    </p>
+
+  </div>
 </footer>
 
+<!-- JS LINK (ALWAYS BEFORE </body>) -->
 <script src="js/script.js"></script>
+
 </body>
-        </html>
+  </html>
