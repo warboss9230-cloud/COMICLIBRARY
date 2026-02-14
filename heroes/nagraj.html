@@ -1,112 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nagraj | ComicLibrary</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Nagraj | ComicLibrary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Nagraj Theme CSS -->
-    <link rel="stylesheet" href="../css/nagraj.css">
+<link rel="stylesheet" href="../css/nagraj-drive.css">
 </head>
 <body>
 
-<!-- HEADER (Same as index) -->
-<header class="header">
-  <div class="logo">ComicLibrary</div>
-
-  <div class="header-right">
-    <div class="search-icon">🔍</div>
+<!-- ===== Thin Header ===== -->
+<header class="thin-header">
+    <div class="logo">ComicLibrary</div>
 
     <div class="menu" id="menuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-  </div>
 
-  <div class="dropdown" id="dropdownMenu">
-    <a href="../index.html">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact</a>
-  </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="../index.html">Home</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
-<!-- SEARCH -->
-<div class="search-overlay" id="searchOverlay">
-  <input type="text" placeholder="Search comics...">
-</div>
+
+<!-- Snake Background -->
+<div class="snake-bg"></div>
 
 
-<!-- NAGRAJ PAGE -->
-<div class="hero-detail nagraj-bg">
+<!-- ===== Hero Section ===== -->
+<section class="hero-mini">
+    <img src="../images/heroes/nagraj.jpg" alt="Nagraj">
 
-    <!-- Profile -->
-    <div class="hero-profile">
-        <img src="../images/heroes/nagraj.jpg" alt="Nagraj">
-
-        <div class="hero-info">
-            <h1>Nagraj</h1>
-            <p>
-                Nagraj is the king of snakes and one of the most powerful superheroes
-                from Raj Comics. Created by the mysterious Naga civilization, he fights
-                evil using his deadly snake powers, poison abilities, and superhuman strength.
-            </p>
-        </div>
+    <div class="hero-text">
+        <h1>Nagraj</h1>
+        <p>
+            Snake king with venom control, regeneration, super strength,
+            and ability to transform into deadly serpent swarms.
+        </p>
     </div>
+</section>
 
-    <!-- Powers -->
-    <div class="powers">
-        <h2>Powers & Abilities</h2>
-        <ul>
-            <li>Control over millions of snakes</li>
-            <li>Deadly poison attacks</li>
-            <li>Superhuman strength and healing</li>
-            <li>Can transform body into snake swarm</li>
-            <li>Hypnosis and mind control</li>
-        </ul>
-    </div>
 
-    <!-- Comics -->
-    <div class="comics-section">
-        <h2>Popular Comics</h2>
+<!-- ===== Comics Drive List ===== -->
+<section class="comics-order">
+    <h2>Read Comics (Google Drive)</h2>
 
-        <div class="comics-grid">
+    <ol>
 
-            <div class="comic-card">
-                <img src="../images/comics/nagraj1.jpg">
-                <span>Nagraj Janm Katha</span>
-            </div>
+        <li>
+            <a href="https://drive.google.com/file/d/FILE_ID_1/view" target="_blank">
+                Nagraj Janm Katha
+            </a>
+        </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/nagraj2.jpg">
-                <span>Nagraj Ki Kabra</span>
-            </div>
+        <li>
+            <a href="https://drive.google.com/file/d/FILE_ID_2/view" target="_blank">
+                Nagraj Ki Kabra
+            </a>
+        </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/nagraj3.jpg">
-                <span>Nagraj Aur Toofan</span>
-            </div>
+        <li>
+            <a href="https://drive.google.com/file/d/FILE_ID_3/view" target="_blank">
+                Nagraj Aur Toofan
+            </a>
+        </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/nagraj4.jpg">
-                <span>Nagraj vs Vishkanya</span>
-            </div>
+        <li>
+            <a href="https://drive.google.com/file/d/FILE_ID_4/view" target="_blank">
+                Nagraj vs Vishkanya
+            </a>
+        </li>
 
-        </div>
-    </div>
+    </ol>
+</section>
 
-</div>
-
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ComicLibrary</p>
-    </div>
-</footer>
-
-<script src="../js/nagraj.js"></script>
+<script src="../js/nagraj-drive.js"></script>
 </body>
-  </html>
+</html>
