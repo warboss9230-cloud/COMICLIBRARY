@@ -5,91 +5,106 @@
     <title>Nagraj | ComicLibrary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS -->
+    <!-- Global CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- Nagraj Theme CSS -->
+    <!-- Nagraj Theme -->
     <link rel="stylesheet" href="../css/nagraj.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- ========== HEADER ========== -->
 <header class="header">
-  <div class="logo">ComicLibrary</div>
+    <div class="logo">ComicLibrary</div>
 
-  <div class="header-right">
-    <div class="search-icon">🔍</div>
+    <div class="header-right">
+        <div class="search-icon">🔍</div>
 
-    <div class="menu" id="menuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="menu" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="dropdownMenu">
-    <a href="../index.html">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact</a>
-  </div>
+    <!-- Active Menu -->
+    <div class="dropdown" id="dropdownMenu">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Heroes</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
 <!-- SEARCH -->
 <div class="search-overlay" id="searchOverlay">
-  <input type="text" placeholder="Search comics...">
+    <input type="text" placeholder="Search comics...">
 </div>
 
 
-<!-- NAGRAJ PAGE -->
+<!-- ========== HERO SECTION ========== -->
 <div class="hero-detail nagraj-bg">
 
-    <!-- Profile -->
     <div class="hero-profile">
         <img src="../images/heroes/nagraj.jpg" alt="Nagraj">
 
         <div class="hero-info">
             <h1>Nagraj</h1>
+
+            <!-- 20 words -->
             <p>
-                Nagraj is one of the most iconic superheroes from Raj Comics. He is
-                known as the "King of Snakes" and has the ability to control
-                millions of snakes. Nagraj fights against evil, using his strength,
-                intelligence, and his deadly weapon, the "Nagpasha."
+                Snake king hero controlling serpents, poison attacks, super strength,
+                regeneration, agility, intelligence, protecting humanity and nature from evil.
             </p>
         </div>
     </div>
 
-    <!-- Powers -->
-    <div class="powers">
-        <h2>Powers & Abilities</h2>
-        <ul>
-            <li>Control over millions of snakes</li>
-            <li>Deadly poison attacks</li>
-            <li>Superhuman strength and speed</li>
-            <li>High-level intelligence and strategy</li>
-            <li>Ability to regenerate and heal</li>
-        </ul>
+    <!-- Glowing Divider -->
+    <div class="glow-line"></div>
+
+
+    <!-- ========== COMICS LIST (PDF READY) ========== -->
+    <div class="comics-section">
+        <h2>Comics (PDF)</h2>
+
+        <ol class="comics-list">
+
+            <li>
+                <a href="../pdf/nagraj/nagraj_01.pdf" target="_blank">
+                    #001 Nagraj Janm Katha
+                </a>
+            </li>
+
+            <li>
+                <a href="../pdf/nagraj/nagraj_02.pdf" target="_blank">
+                    #002 Nagraj Ki Kabra
+                </a>
+            </li>
+
+            <li>
+                <a href="../pdf/nagraj/nagraj_03.pdf" target="_blank">
+                    #003 Vishkanya
+                </a>
+            </li>
+
+            <li>
+                <a href="../pdf/nagraj/nagraj_04.pdf" target="_blank">
+                    #004 Nagraj Aur Shango
+                </a>
+            </li>
+
+        </ol>
     </div>
 
-<!-- Comics -->
-<div class="comics-section">
-    <h2>Popular Comics</h2>
-
-    <ol class="comics-list">
-
-        <li><a href="#">Nagraj Ki Kahani</a></li>
-        <li><a href="#">Vishkanya Ka Pralay</a></li>
-        <li><a href="#">Bhayanak Nagraj</a></li>
-        <li><a href="#">Nagraj Aur Dushman</a></li>
-
-    </ol>
 </div>
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ComicLibrary</p>
-    </div>
-</footer>
 
-<script src="../js/nagraj.js"></script>
+
+<!-- ========== COPYRIGHT ONLY ========== -->
+<div class="copyright">
+    © 2026 ComicLibrary
+</div>
+
+<script src="../js/script.js"></script>
+
 </body>
     </html>
