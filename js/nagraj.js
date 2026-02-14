@@ -1,12 +1,6 @@
 const menuBtn = document.getElementById("menuBtn");
-const dropdown = document.getElementById("dropdownMenu");
+const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("active");
-
-    if (dropdown.style.display === "flex") {
-        dropdown.style.display = "none";
-    } else {
-        dropdown.style.display = "flex";
-    }
+menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
 });
