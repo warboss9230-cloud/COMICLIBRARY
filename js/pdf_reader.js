@@ -1,16 +1,19 @@
-// Get PDF name from URL
+// Get URL parameters
 const params = new URLSearchParams(window.location.search);
-const file = params.get("file");
+const hero = params.get("hero");
+const comic = params.get("comic");
 
-if (!file) {
-    alert("PDF not found");
+if (!hero || !comic) {
+    alert("Comic not found");
 }
 
 // Set title
-document.getElementById("comicTitle").innerText = file.replace(".pdf", "");
+document.getElementById("comicTitle").innerText =
+    comic.replace(".pdf", "").replaceAll("_", " ");
 
-// Load PDF
-document.getElementById("pdfViewer").src = `../pdf/${file}`;
+// Set PDF path
+document.getElementById("pdfViewer").src =
+    `../pdf/${hero}/${comic}`;
 
 // Back button
 function goBack() {
