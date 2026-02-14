@@ -1,146 +1,138 @@
+/* ===== Nagraj Snake Theme ===== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.nagraj-bg {
+    position: relative;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: #ffffff;
-}
-
-/* HEADER */
-.header {
+/* Snake aura effect */
+.nagraj-bg::before {
+    content: "";
     position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #00ff00, transparent 60%);
+    opacity: 0.08;
+    animation: snakeGlow 7s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes snakeGlow {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+}
+
+/* Profile Section */
+
+.hero-profile {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 12px 20px;
-    z-index: 1000;
-}
-
-.logo {
-    font-weight: bold;
-    color: #00ff88;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
     gap: 20px;
+    margin-bottom: 30px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
+.hero-profile img {
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #00ff00;
+    animation: snakeBreath 4s ease-in-out infinite;
 }
 
-.nav-links a.active {
-    color: #00ff88;
+/* Snake breath effect */
+@keyframes snakeBreath {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
-.menu-btn {
-    display: none;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-/* HERO SECTION */
-.hero {
-    margin-top: 70px;
-    padding: 50px 20px;
-    background: linear-gradient(to bottom, #002a1a, #000);
-}
-
-.hero-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.hero-image img {
-    width: 260px;
-    border-radius: 12px;
+.hero-info {
+    text-align: center;
 }
 
 .hero-info h1 {
-    font-size: 34px;
-    margin-bottom: 15px;
-    color: #00ff88;
+    font-size: 28px;
+    color: #00ff00;
 }
 
 .hero-info p {
-    margin-bottom: 10px;
+    color: #ddd;
     line-height: 1.6;
 }
 
-/* COMIC LIST */
-.comic-section {
-    padding: 40px 20px;
+/* Powers Section */
+
+.powers h2 {
+    color: #00ff00;
+    margin-bottom: 10px;
 }
 
-.comic-section h2 {
-    margin-bottom: 20px;
-    color: #00ff88;
+.powers ul {
+    list-style: none;
 }
 
-.comic-list {
-    padding-left: 20px;
+.powers li {
+    background: #0b0b0b;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff00;
+    transition: transform 0.3s;
 }
 
-.comic-list li {
+.powers li:hover {
+    transform: translateX(6px);
+}
+
+/* Comics Section */
+
+.comics-section h2 {
+    color: #00ff00;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.comic-list a {
-    text-decoration: none;
-    background: #00ff88;
-    color: black;
-    padding: 5px 12px;
-    border-radius: 6px;
+.comics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.comic-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px #00ff00;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.comic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ff00;
+}
+
+.comic-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.comic-card span {
+    display: block;
+    padding: 8px;
     font-size: 13px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* Desktop Layout */
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 55px;
-        right: 0;
-        background: #111;
-        width: 160px;
-        padding: 15px;
+@media(min-width:700px) {
+    .hero-profile {
+        flex-direction: row;
+        text-align: left;
     }
 
-    .nav-links.show {
-        display: flex;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .hero-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .comic-list li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+    .hero-info {
+        text-align: left;
     }
 }
