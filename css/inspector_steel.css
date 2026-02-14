@@ -1,0 +1,117 @@
+/* ===============================
+   INSPECTOR STEEL THEME
+================================ */
+
+/* Background aura animation */
+.steel-bg::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #00ccff, transparent 60%);
+    opacity: 0.08;
+    animation: steelAura 10s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes steelAura {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+
+/* Active menu */
+.dropdown a.active {
+    color: #00ccff;
+    font-weight: bold;
+}
+
+
+/* Layout */
+.hero-detail {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-profile img {
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px #00ccff;
+}
+
+.hero-info h1 {
+    color: #00ccff;
+}
+
+.hero-info p {
+    color: #ccc;
+    text-align: center;
+}
+
+
+/* ===============================
+   GLOW DIVIDER
+================================ */
+.glow-line {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background: #00ccff;
+    box-shadow: 0 0 15px #00ccff;
+}
+
+
+/* ===============================
+   COMIC CARDS (GLOW LIST)
+================================ */
+
+.comics-section h2 {
+    color: #00ccff;
+    margin-bottom: 15px;
+}
+
+.comics-list {
+    padding-left: 20px;
+}
+
+.comics-list li {
+    margin-bottom: 12px;
+}
+
+.comics-list a {
+    display: block;
+    background: #111;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+
+    box-shadow: 0 0 10px rgba(0,204,255,0.3);
+    transition: 0.3s;
+}
+
+.comics-list a:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0 20px #00ccff;
+    color: #00ccff;
+}
+
+
+/* ===============================
+   COPYRIGHT
+================================ */
+.copyright {
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 13px;
+    color: #00ccff;
+    text-shadow: 0 0 8px #00ccff;
+}
