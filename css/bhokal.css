@@ -1,13 +1,8 @@
-/* ===== Bhokal Royal Theme ===== */
+/* ===============================
+   BHOKAL THEME (Royal Purple)
+================================ */
 
-.bhokal-bg {
-    position: relative;
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Purple-Golden aura */
+/* Background aura */
 .bhokal-bg::before {
     content: "";
     position: fixed;
@@ -15,123 +10,101 @@
     height: 200%;
     background: radial-gradient(circle, #a855f7, transparent 60%);
     opacity: 0.07;
-    animation: royalAura 7s infinite alternate;
+    animation: auraMove 10s infinite alternate;
     z-index: -1;
 }
 
-@keyframes royalAura {
+@keyframes auraMove {
     from { transform: scale(1); }
-    to { transform: scale(1.18); }
+    to { transform: scale(1.2); }
 }
 
-/* Profile */
+
+/* Active menu */
+.dropdown a.active {
+    color: #a855f7;
+    font-weight: bold;
+}
+
+
+/* Layout */
+.hero-detail {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
 
 .hero-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-bottom: 30px;
 }
 
 .hero-profile img {
     width: 220px;
-    border-radius: 15px;
+    border-radius: 12px;
     box-shadow: 0 0 25px #a855f7;
-    animation: bhokalFloat 4s ease-in-out infinite;
-}
-
-@keyframes bhokalFloat {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-
-.hero-info {
-    text-align: center;
 }
 
 .hero-info h1 {
-    font-size: 28px;
     color: #a855f7;
 }
 
 .hero-info p {
-    color: #ddd;
-    line-height: 1.6;
+    color: #ccc;
+    text-align: center;
 }
 
-/* Powers */
 
-.powers h2 {
-    color: #a855f7;
-    margin-bottom: 10px;
+/* Glowing divider */
+.glow-line {
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background: #a855f7;
+    box-shadow: 0 0 15px #a855f7;
 }
 
-.powers ul {
-    list-style: none;
-}
 
-.powers li {
-    background: #0b0b0b;
-    margin-bottom: 8px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #a855f7;
-    transition: transform 0.3s;
-}
-
-.powers li:hover {
-    transform: translateX(6px);
-}
-
-/* Comics */
-
+/* Comics glowing list */
 .comics-section h2 {
     color: #a855f7;
     margin-bottom: 15px;
 }
 
-.comics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 15px;
+.comics-list {
+    padding-left: 20px;
 }
 
-.comic-card {
-    background: #111;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 0 15px #a855f7;
-    transition: transform 0.3s, box-shadow 0.3s;
+.comics-list li {
+    margin-bottom: 12px;
 }
 
-.comic-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #a855f7;
-}
-
-.comic-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.comic-card span {
+.comics-list a {
     display: block;
-    padding: 8px;
-    font-size: 13px;
+    background: #111;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+
+    box-shadow: 0 0 10px rgba(168,85,247,0.3);
+    transition: 0.3s;
 }
 
-/* Desktop */
+.comics-list a:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0 20px #a855f7;
+    color: #a855f7;
+}
 
-@media(min-width:700px) {
-    .hero-profile {
-        flex-direction: row;
-        text-align: left;
-    }
 
-    .hero-info {
-        text-align: left;
-    }
-  }
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 13px;
+    color: #a855f7;
+    text-shadow: 0 0 8px #a855f7;
+}
