@@ -1,84 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Nagraj | ComicLibrary</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Nagraj | ComicLibrary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/nagraj-drive.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/nagraj.css">
 </head>
 <body>
 
-<!-- ===== Thin Header ===== -->
-<header class="thin-header">
-    <div class="logo">ComicLibrary</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">ComicLibrary</div>
 
-    <div class="menu" id="menuBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" class="active">Nagraj</a></li>
+                <li><a href="../heroes.html">Heroes</a></li>
+            </ul>
+        </nav>
 
-    <div class="dropdown" id="dropdownMenu">
-        <a href="../index.html">Home</a>
-        <a href="#">Trending</a>
-        <a href="#">Categories</a>
-        <a href="#">Contact</a>
-    </div>
-</header>
+        <div class="menu-btn" id="menuBtn">&#9776;</div>
+    </header>
 
 
-<!-- Snake Background -->
-<div class="snake-bg"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="https://i.imgur.com/YOUR_IMAGE.jpg" alt="Nagraj">
+            </div>
+
+            <div class="hero-info">
+                <h1>NAGRAJ</h1>
+                <p>
+                    Snake-powered superhero protecting humanity with venom, agility, and mystical serpent energy.
+                </p>
+                <p><strong>Abilities:</strong> Poison control, regeneration, snake communication, enhanced strength.</p>
+            </div>
+        </div>
+    </section>
 
 
-<!-- ===== Hero Section ===== -->
-<section class="hero-mini">
-    <img src="../images/heroes/nagraj.jpg" alt="Nagraj">
+    <!-- Comic List -->
+    <section class="comic-section">
+        <h2>Comic List</h2>
 
-    <div class="hero-text">
-        <h1>Nagraj</h1>
-        <p>
-            Snake king with venom control, regeneration, super strength,
-            and ability to transform into deadly serpent swarms.
-        </p>
-    </div>
-</section>
+        <ol class="comic-list">
+            <li>
+                <span>Nagraj Janam Rahasya</span>
+                <a href="#" target="_blank">Read</a>
+            </li>
+
+            <li>
+                <span>Nagraj Aur Toofan</span>
+                <a href="#" target="_blank">Read</a>
+            </li>
+
+            <li>
+                <span>Nagraj Ki Kabra</span>
+                <a href="#" target="_blank">Read</a>
+            </li>
+        </ol>
+    </section>
 
 
-<!-- ===== Comics Drive List ===== -->
-<section class="comics-order">
-    <h2>Read Comics (Google Drive)</h2>
-
-    <ol>
-
-        <li>
-            <a href="https://drive.google.com/file/d/FILE_ID_1/view" target="_blank">
-                Nagraj Janm Katha
-            </a>
-        </li>
-
-        <li>
-            <a href="https://drive.google.com/file/d/FILE_ID_2/view" target="_blank">
-                Nagraj Ki Kabra
-            </a>
-        </li>
-
-        <li>
-            <a href="https://drive.google.com/file/d/FILE_ID_3/view" target="_blank">
-                Nagraj Aur Toofan
-            </a>
-        </li>
-
-        <li>
-            <a href="https://drive.google.com/file/d/FILE_ID_4/view" target="_blank">
-                Nagraj vs Vishkanya
-            </a>
-        </li>
-
-    </ol>
-</section>
-
-<script src="../js/nagraj-drive.js"></script>
+    <!-- JS -->
+    <script src="../js/nagraj.js"></script>
 </body>
 </html>
