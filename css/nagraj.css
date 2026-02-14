@@ -1,168 +1,146 @@
-/* ===== Body ===== */
 
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b0b0b;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ===== Thin Header ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+}
 
-.thin-header {
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 15px;
-    background: rgba(0,0,0,0.8);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 12px 20px;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 18px;
-    color: #00ff88;
     font-weight: bold;
+    color: #00ff88;
 }
 
-/* Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-.menu {
-    width: 22px;
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-links a.active {
+    color: #00ff88;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 22px;
     cursor: pointer;
 }
 
-.menu span {
-    display: block;
-    height: 2px;
-    background: white;
-    margin: 4px 0;
-    transition: 0.3s;
+/* HERO SECTION */
+.hero {
+    margin-top: 70px;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #002a1a, #000);
 }
 
-/* Active animation */
-
-.menu.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(6px);
-}
-.menu.active span:nth-child(2) {
-    opacity: 0;
-}
-.menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-6px);
-}
-
-/* Dropdown */
-
-.dropdown {
-    position: absolute;
-    right: 15px;
-    top: 40px;
-    background: #111;
-    padding: 10px;
-    border-radius: 6px;
-    display: none;
-    flex-direction: column;
-    gap: 8px;
-    box-shadow: 0 0 15px #00ff88;
-}
-
-.dropdown a {
-    color: white;
-    text-decoration: none;
-}
-
-.dropdown a:hover {
-    color: #00ff88;
-}
-
-
-/* ===== Snake Background Animation ===== */
-
-.snake-bg {
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    background: repeating-linear-gradient(
-        45deg,
-        rgba(0,255,136,0.05) 0px,
-        rgba(0,255,136,0.05) 3px,
-        transparent 3px,
-        transparent 10px
-    );
-    animation: snakeMove 25s linear infinite;
-    z-index: -1;
-}
-
-@keyframes snakeMove {
-    from { transform: translate(0,0); }
-    to { transform: translate(300px,300px); }
-}
-
-
-/* ===== Hero Section ===== */
-
-.hero-mini {
+.hero-container {
     display: flex;
-    gap: 15px;
-    padding: 20px;
     align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.hero-mini img {
-    width: 120px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #00ff88;
+.hero-image img {
+    width: 260px;
+    border-radius: 12px;
 }
 
-.hero-text h1 {
+.hero-info h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
     color: #00ff88;
-    margin-bottom: 6px;
 }
 
-.hero-text p {
-    font-size: 14px;
-    color: #ccc;
-}
-
-
-/* ===== Comics Ordered List ===== */
-
-.comics-order {
-    padding: 0 20px 40px;
-}
-
-.comics-order h2 {
-    color: #00ff88;
+.hero-info p {
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
-.comics-order ol {
+/* COMIC LIST */
+.comic-section {
+    padding: 40px 20px;
+}
+
+.comic-section h2 {
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+
+.comic-list {
     padding-left: 20px;
 }
 
-.comics-order li {
-    background: #111;
-    margin-bottom: 10px;
-    padding: 12px;
-    border-radius: 6px;
-    box-shadow: 0 0 10px #00ff88;
-    transition: 0.3s;
+.comic-list li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.comics-order li:hover {
-    transform: translateX(6px);
-}
-
-.comics-order a {
-    color: #00ff88;
+.comic-list a {
     text-decoration: none;
-    font-size: 15px;
+    background: #00ff88;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 13px;
 }
 
-.comics-order a:hover {
-    text-decoration: underline;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+        right: 0;
+        background: #111;
+        width: 160px;
+        padding: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .comic-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
 }
