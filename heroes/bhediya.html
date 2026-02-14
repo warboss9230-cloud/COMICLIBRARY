@@ -5,108 +5,105 @@
     <title>Bhediya | ComicLibrary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS -->
+    <!-- Global CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- Bhediya Theme CSS -->
+    <!-- Bhediya Theme -->
     <link rel="stylesheet" href="../css/bhediya.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
-  <div class="logo">ComicLibrary</div>
+    <div class="logo">ComicLibrary</div>
 
-  <div class="header-right">
-    <div class="search-icon">🔍</div>
+    <div class="header-right">
+        <div class="search-icon">🔍</div>
 
-    <div class="menu" id="menuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="menu" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="dropdownMenu">
-    <a href="../index.html">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact</a>
-  </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Heroes</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
 <!-- SEARCH -->
 <div class="search-overlay" id="searchOverlay">
-  <input type="text" placeholder="Search comics...">
+    <input type="text" placeholder="Search comics...">
 </div>
 
 
-<!-- BHEDIYA PAGE -->
+<!-- HERO SECTION -->
 <div class="hero-detail bhediya-bg">
 
-    <!-- Profile -->
     <div class="hero-profile">
         <img src="../images/heroes/bhediya.jpg" alt="Bhediya">
 
         <div class="hero-info">
             <h1>Bhediya</h1>
+
+            <!-- 20 words -->
             <p>
-                Bhediya is a powerful werewolf hero from Raj Comics. Protector of
-                the forests, he possesses the strength, speed, and instincts of a
-                wild predator. He fights evil forces that threaten nature and humanity.
+                Forest protector with werewolf powers, super strength, speed,
+                sharp senses, healing ability, fighting evil threatening nature and humanity.
             </p>
         </div>
     </div>
 
-    <!-- Powers -->
-    <div class="powers">
-        <h2>Powers & Abilities</h2>
-        <ul>
-            <li>Superhuman strength and speed</li>
-            <li>Enhanced senses and night vision</li>
-            <li>Rapid healing ability</li>
-            <li>Can transform into a powerful werewolf</li>
-            <li>Strong connection with nature and wildlife</li>
-        </ul>
-    </div>
+    <!-- Glowing Divider -->
+    <div class="glow-line"></div>
 
-    <!-- Comics -->
+
+    <!-- COMICS (PDF READY) -->
     <div class="comics-section">
-        <h2>Popular Comics</h2>
+        <h2>Comics (PDF)</h2>
 
-        <div class="comics-grid">
+        <ol class="comics-list">
 
-            <div class="comic-card">
-                <img src="../images/comics/bhediya1.jpg">
-                <span>Bhediya Ki Kahani</span>
-            </div>
+            <li>
+                <a href="../pdf/bhediya/bhediya_01.pdf" target="_blank">
+                    #001 Bhediya Ki Kahani
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/bhediya2.jpg">
-                <span>Jungle Ka Rakshak</span>
-            </div>
+            <li>
+                <a href="../pdf/bhediya/bhediya_02.pdf" target="_blank">
+                    #002 Jungle Ka Rakshak
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/bhediya3.jpg">
-                <span>Khooni Chand</span>
-            </div>
+            <li>
+                <a href="../pdf/bhediya/bhediya_03.pdf" target="_blank">
+                    #003 Khooni Chand
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/bhediya4.jpg">
-                <span>Bhediya vs Shikari</span>
-            </div>
+            <li>
+                <a href="../pdf/bhediya/bhediya_04.pdf" target="_blank">
+                    #004 Bhediya vs Shikari
+                </a>
+            </li>
 
-        </div>
+        </ol>
     </div>
 
 </div>
 
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ComicLibrary</p>
-    </div>
-</footer>
 
-<script src="../js/bhediya.js"></script>
+<!-- COPYRIGHT ONLY -->
+<div class="copyright">
+    © 2026 ComicLibrary
+</div>
+
+<script src="../js/script.js"></script>
+
 </body>
-  </html>
+    </html>
