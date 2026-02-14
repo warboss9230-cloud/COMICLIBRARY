@@ -5,109 +5,105 @@
     <title>Doga | ComicLibrary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS -->
+    <!-- Global CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- Doga Theme CSS -->
+    <!-- Doga Theme -->
     <link rel="stylesheet" href="../css/doga.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
-  <div class="logo">ComicLibrary</div>
+    <div class="logo">ComicLibrary</div>
 
-  <div class="header-right">
-    <div class="search-icon">🔍</div>
+    <div class="header-right">
+        <div class="search-icon">🔍</div>
 
-    <div class="menu" id="menuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="menu" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="dropdownMenu">
-    <a href="../index.html">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact</a>
-  </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Heroes</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
 <!-- SEARCH -->
 <div class="search-overlay" id="searchOverlay">
-  <input type="text" placeholder="Search comics...">
+    <input type="text" placeholder="Search comics...">
 </div>
 
 
-<!-- DOGA PAGE -->
+<!-- HERO SECTION -->
 <div class="hero-detail doga-bg">
 
-    <!-- Profile -->
     <div class="hero-profile">
         <img src="../images/heroes/doga.jpg" alt="Doga">
 
         <div class="hero-info">
             <h1>Doga</h1>
+
+            <!-- 20 words -->
             <p>
-                Doga is the dark vigilante of Mumbai. Unlike traditional superheroes,
-                he operates in the shadows and fights crime using brutal strength,
-                weapons, and fearless determination. His mission is to eliminate evil
-                and protect the innocent at any cost.
+                Ruthless vigilante fighting crime using weapons, combat skills,
+                bullet resistance, trained dogs, fearless attitude, protecting Mumbai from criminals.
             </p>
         </div>
     </div>
 
-    <!-- Powers -->
-    <div class="powers">
-        <h2>Skills & Abilities</h2>
-        <ul>
-            <li>Peak human strength and endurance</li>
-            <li>Expert hand-to-hand combat</li>
-            <li>Master of firearms and weapons</li>
-            <li>Fearless crime fighter</li>
-            <li>High pain tolerance and survival skills</li>
-        </ul>
-    </div>
+    <!-- Glowing Divider -->
+    <div class="glow-line"></div>
 
-    <!-- Comics -->
+
+    <!-- COMICS (PDF READY) -->
     <div class="comics-section">
-        <h2>Popular Comics</h2>
+        <h2>Comics (PDF)</h2>
 
-        <div class="comics-grid">
+        <ol class="comics-list">
 
-            <div class="comic-card">
-                <img src="../images/comics/doga1.jpg">
-                <span>Curfew</span>
-            </div>
+            <li>
+                <a href="../pdf/doga/doga_01.pdf" target="_blank">
+                    #001 Curfew
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/doga2.jpg">
-                <span>Hinsak</span>
-            </div>
+            <li>
+                <a href="../pdf/doga/doga_02.pdf" target="_blank">
+                    #002 Ye Hai Doga
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/doga3.jpg">
-                <span>Jurm</span>
-            </div>
+            <li>
+                <a href="../pdf/doga/doga_03.pdf" target="_blank">
+                    #003 Aakhri Goli
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/doga4.jpg">
-                <span>Doga vs Bhediya</span>
-            </div>
+            <li>
+                <a href="../pdf/doga/doga_04.pdf" target="_blank">
+                    #004 Mumbai Ka Rakshak
+                </a>
+            </li>
 
-        </div>
+        </ol>
     </div>
 
 </div>
 
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ComicLibrary</p>
-    </div>
-</footer>
 
-<script src="../js/doga.js"></script>
+<!-- COPYRIGHT ONLY -->
+<div class="copyright">
+    © 2026 ComicLibrary
+</div>
+
+<script src="../js/script.js"></script>
+
 </body>
-              </html>
+    </html>
