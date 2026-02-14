@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Comic Reader</title>
-
-<link rel="stylesheet" href="../css/pdf_reader.css">
+<link rel="stylesheet" href="css/reader.css">
 </head>
+
 <body>
 
-<div class="top-bar">
-    <button onclick="goBack()">⬅ Back</button>
-    <span id="comicTitle">Comic Reader</span>
-</div>
+<header>
+    <button onclick="goBack()">← Back</button>
+    <div>
+        <button onclick="prevPage()">◀</button>
+        <span id="pageInfo"></span>
+        <button onclick="nextPage()">▶</button>
+        <button onclick="zoomIn()">+</button>
+        <button onclick="zoomOut()">−</button>
+    </div>
+</header>
 
-<div class="pdf-container">
-    <iframe id="pdfViewer"></iframe>
-</div>
+<canvas id="pdfCanvas"></canvas>
 
-<script src="../js/pdf_reader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+<script src="js/reader.js"></script>
+
 </body>
 </html>
