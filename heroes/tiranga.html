@@ -5,109 +5,105 @@
     <title>Tiranga | ComicLibrary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS -->
+    <!-- Global CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- Tiranga Theme CSS -->
+    <!-- Tiranga Theme -->
     <link rel="stylesheet" href="../css/tiranga.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
-  <div class="logo">ComicLibrary</div>
+    <div class="logo">ComicLibrary</div>
 
-  <div class="header-right">
-    <div class="search-icon">🔍</div>
+    <div class="header-right">
+        <div class="search-icon">🔍</div>
 
-    <div class="menu" id="menuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="menu" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="dropdownMenu">
-    <a href="../index.html">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact</a>
-  </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Heroes</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
 <!-- SEARCH -->
 <div class="search-overlay" id="searchOverlay">
-  <input type="text" placeholder="Search comics...">
+    <input type="text" placeholder="Search comics...">
 </div>
 
 
-<!-- TIRANGA PAGE -->
+<!-- HERO SECTION -->
 <div class="hero-detail tiranga-bg">
 
-    <!-- Profile -->
     <div class="hero-profile">
         <img src="../images/heroes/tiranga.jpg" alt="Tiranga">
 
         <div class="hero-info">
             <h1>Tiranga</h1>
+
+            <!-- 20 words -->
             <p>
-                Tiranga is a patriotic superhero dedicated to protecting the nation.
-                With advanced combat skills, intelligence, and unwavering courage,
-                he fights terrorism, crime, and threats to national security. He
-                symbolizes bravery, discipline, and love for the country.
+                Patriotic hero using combat skills, strategy, courage, leadership,
+                fighting terrorists, enemies, protecting nation, justice, and national pride always.
             </p>
         </div>
     </div>
 
-    <!-- Powers -->
-    <div class="powers">
-        <h2>Skills & Abilities</h2>
-        <ul>
-            <li>Expert martial artist and combat specialist</li>
-            <li>Master of weapons and tactical operations</li>
-            <li>Highly trained intelligence officer</li>
-            <li>Peak physical strength and endurance</li>
-            <li>Advanced surveillance and strategy skills</li>
-        </ul>
-    </div>
+    <!-- Glowing Divider -->
+    <div class="glow-line"></div>
 
-    <!-- Comics -->
+
+    <!-- COMICS (PDF READY) -->
     <div class="comics-section">
-        <h2>Popular Comics</h2>
+        <h2>Comics (PDF)</h2>
 
-        <div class="comics-grid">
+        <ol class="comics-list">
 
-            <div class="comic-card">
-                <img src="../images/comics/tiranga1.jpg">
-                <span>Mission Tiranga</span>
-            </div>
+            <li>
+                <a href="../pdf/tiranga/tiranga_01.pdf" target="_blank">
+                    #001 Tiranga Ka Mission
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/tiranga2.jpg">
-                <span>Desh Rakshak</span>
-            </div>
+            <li>
+                <a href="../pdf/tiranga/tiranga_02.pdf" target="_blank">
+                    #002 Desh Ke Dushman
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/tiranga3.jpg">
-                <span>Operation Border</span>
-            </div>
+            <li>
+                <a href="../pdf/tiranga/tiranga_03.pdf" target="_blank">
+                    #003 Operation Border
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/tiranga4.jpg">
-                <span>Tiranga vs Terror</span>
-            </div>
+            <li>
+                <a href="../pdf/tiranga/tiranga_04.pdf" target="_blank">
+                    #004 Tiranga vs Terror
+                </a>
+            </li>
 
-        </div>
+        </ol>
     </div>
 
 </div>
 
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ComicLibrary</p>
-    </div>
-</footer>
 
-<script src="../js/tiranga.js"></script>
+<!-- COPYRIGHT ONLY -->
+<div class="copyright">
+    © 2026 ComicLibrary
+</div>
+
+<script src="../js/script.js"></script>
+
 </body>
-  </html>
+ </html>
