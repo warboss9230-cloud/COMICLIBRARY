@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,109 +5,105 @@
     <title>Parmanu | ComicLibrary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Main CSS -->
+    <!-- Global CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- ParmanU Theme CSS -->
+    <!-- ParmanU Theme -->
     <link rel="stylesheet" href="../css/parmanu.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="header">
-  <div class="logo">ComicLibrary</div>
+    <div class="logo">ComicLibrary</div>
 
-  <div class="header-right">
-    <div class="search-icon">🔍</div>
+    <div class="header-right">
+        <div class="search-icon">🔍</div>
 
-    <div class="menu" id="menuBtn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="menu" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-  </div>
 
-  <div class="dropdown" id="dropdownMenu">
-    <a href="../index.html">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Categories</a>
-    <a href="#">Contact</a>
-  </div>
+    <div class="dropdown" id="dropdownMenu">
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Heroes</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </div>
 </header>
 
 <!-- SEARCH -->
 <div class="search-overlay" id="searchOverlay">
-  <input type="text" placeholder="Search comics...">
+    <input type="text" placeholder="Search comics...">
 </div>
 
 
-<!-- PARMANU PAGE -->
+<!-- HERO SECTION -->
 <div class="hero-detail parmanu-bg">
 
-    <!-- Profile -->
     <div class="hero-profile">
         <img src="../images/heroes/parmanu.jpg" alt="Parmanu">
 
         <div class="hero-info">
             <h1>Parmanu</h1>
+
+            <!-- 20 words -->
             <p>
-                ParmanU is a high-tech superhero created by Raj Comics. Equipped
-                with a powerful atomic suit, he can fly, fire energy blasts, and
-                use advanced weapons. He fights crime and protects the nation
-                using technology, courage, and scientific power.
+                High-tech armored hero using atomic suit, flight, energy blasts,
+                advanced weapons, durability, protecting nation from threats and enemies.
             </p>
         </div>
     </div>
 
-    <!-- Powers -->
-    <div class="powers">
-        <h2>Powers & Abilities</h2>
-        <ul>
-            <li>Powered atomic armor suit</li>
-            <li>Flight capability</li>
-            <li>Energy and laser attacks</li>
-            <li>Advanced weapons and gadgets</li>
-            <li>Enhanced strength and durability</li>
-        </ul>
-    </div>
+    <!-- Glowing Divider -->
+    <div class="glow-line"></div>
 
-    <!-- Comics -->
+
+    <!-- COMICS (PDF READY) -->
     <div class="comics-section">
-        <h2>Popular Comics</h2>
+        <h2>Comics (PDF)</h2>
 
-        <div class="comics-grid">
+        <ol class="comics-list">
 
-            <div class="comic-card">
-                <img src="../images/comics/parmanu1.jpg">
-                <span>Parmanu Ka Janm</span>
-            </div>
+            <li>
+                <a href="../pdf/parmanu/parmanu_01.pdf" target="_blank">
+                    #001 ParmanU Ka Janm
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/parmanu2.jpg">
-                <span>Atomic Attack</span>
-            </div>
+            <li>
+                <a href="../pdf/parmanu/parmanu_02.pdf" target="_blank">
+                    #002 Atomic Attack
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/parmanu3.jpg">
-                <span>Mission Desh Raksha</span>
-            </div>
+            <li>
+                <a href="../pdf/parmanu/parmanu_03.pdf" target="_blank">
+                    #003 Mission Desh Raksha
+                </a>
+            </li>
 
-            <div class="comic-card">
-                <img src="../images/comics/parmanu4.jpg">
-                <span>Parmanu vs Terror</span>
-            </div>
+            <li>
+                <a href="../pdf/parmanu/parmanu_04.pdf" target="_blank">
+                    #004 ParmanU vs Terror
+                </a>
+            </li>
 
-        </div>
+        </ol>
     </div>
 
 </div>
 
-<footer class="footer">
-    <div class="footer-container">
-        <p>© 2026 ComicLibrary</p>
-    </div>
-</footer>
 
-<script src="../js/parmanu.js"></script>
+<!-- COPYRIGHT ONLY -->
+<div class="copyright">
+    © 2026 ComicLibrary
+</div>
+
+<script src="../js/script.js"></script>
+
 </body>
-  </html>
+</html>
