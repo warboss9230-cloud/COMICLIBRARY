@@ -1,4 +1,6 @@
-const fileID = "17gx7ThOkUeTq1MgO1Gv1oxSubSc4JCll";
+const params = new URLSearchParams(window.location.search);
+const fileID = params.get("id");
+
 const url = `https://drive.google.com/uc?export=download&id=${fileID}`;
 
 let pdfDoc = null;
