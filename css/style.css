@@ -258,40 +258,86 @@ body::before {
         height: 300px;
     }
 }
-/* Trending */
+/* =========================
+   TRENDING SECTION
+========================= */
 
 .trending {
   padding: 20px;
 }
 
+/* Responsive Grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 15px;
 }
 
+/* Link */
 .card-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-/* Card Size Fix */
+/* Card */
 .card {
-    width: 180px;          /* card width control */
-    height: 260px;         /* card height control */
-    background: #111;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,255,255,0.2);
-    transition: 0.3s;
+  width: 100%;              /* IMPORTANT: remove fixed width */
+  height: 230px;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover Effect */
+/* Hover */
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.6);
 }
 
+/* Image Fix */
+.card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;      /* Prevent large/stretch image */
+  display: block;
+}
+
+/* Title */
+.card-title {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .card {
+    height: 250px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .card {
+    height: 270px;
+  }
+}
 
 /* Category */
 
