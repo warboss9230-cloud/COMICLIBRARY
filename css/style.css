@@ -270,15 +270,28 @@ body::before {
   gap: 15px;
 }
 
-.card {
-  height: 160px;
-  background: #111;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 15px #ff00cc;
+.card-link {
+    text-decoration: none;
+    color: inherit;
 }
+
+/* Card Size Fix */
+.card {
+    width: 180px;          /* card width control */
+    height: 260px;         /* card height control */
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
 
 /* Category */
 
