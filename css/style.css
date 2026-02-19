@@ -112,36 +112,6 @@ body::before {
 
 /* Search Overlay */
 
-.search-box{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Results box */
-.search-results{
-  width: 85%;
-  max-width: 500px;
-  margin-top: 15px;
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-/* Result item */
-.result-item{
-  background: #111;
-  color: #fff;
-  padding: 10px 15px;
-  margin-bottom: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid #00ffff40;
-}
-
-.result-item:hover{
-  background: #00ffff20;
-}
 
 /* Welcome */
 
